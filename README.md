@@ -1,68 +1,62 @@
-# IMAGI-NATION Dashboard
+# AIME Dashboards & Visualizations
 
-This project displays the IMAGI-NATION Metrics & Impact Dashboard.
+This project is a React application designed to showcase various metrics, concepts, and visualizations related to the AIME organization and its initiatives, including the IMAGI-NATION ecosystem.
 
-## Available Scripts
+## Purpose
 
-In the project directory, you can run:
+The goal of this application is to provide interactive dashboards and calculators that illustrate:
 
-### `npm start` or `yarn start`
+*   AIME's overall impact and reach (IMAGI-NATION Dashboard).
+*   Economic models like the "Hoodie Economy".
+*   The concept and calculation of Gross Relational Potential (GRP).
+*   Information about different facets of the IMAGI-NATION structure (Joy Corps, Citizens, IMAGI-Labs, Presidents, IKSL, Residents, Toolshed, Custodians).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Pages / Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The application currently includes the following pages:
 
-### `npm test` or `yarn test`
+*   **Dashboard (`/`)**: Displays key metrics and visualizations for the IMAGI-NATION initiative.
+*   **Hoodie Economy (`/hoodie-economy`)**: Visualizes concepts related to the Hoodie Economy model.
+*   **Joy Corps (`/joy-corps`)**: Information about the Joy Corps program.
+*   **Citizens (`/citizens`)**: Information about the Citizens involved.
+*   **IMAGI-Labs (`/imagi-labs`)**: Information about the IMAGI-Labs.
+*   **Presidents (`/presidents`)**: Information about the Presidents.
+*   **IKSL (`/iksl`)**: Information about Indigenous Knowledge Systems Labs.
+*   **Residents (`/residents`)**: Information about the Systems Change Residents.
+*   **Toolshed (`/toolshed`)**: Information about the Toolshed resources.
+*   **Custodians (`/custodians`)**: Information about the Custodians.
+*   **GRP Calculator (`/grp-calculator`)**: An interactive calculator demonstrating the concept of Gross Relational Potential based on network size and relation value.
 
-Launches the test runner in the interactive watch mode.
+## Technologies Used
 
-### `npm run build` or `yarn build`
+*   **React**: JavaScript library for building user interfaces.
+*   **React Router**: For declarative routing.
+*   **Tailwind CSS**: Utility-first CSS framework for styling.
+*   **Recharts**: Composable charting library for data visualization.
+*   **Lucide React**: Icon library.
+*   **Create React App**: Project setup and tooling.
+*   **gh-pages**: For deploying to GitHub Pages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup and Running
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-## Setup
-
-1.  Install dependencies: `npm install` or `yarn install`
-2.  Set up Tailwind CSS (see instructions below).
-3.  Start the development server: `npm start` or `yarn start`
-
-## Tailwind CSS Setup
-
-This project uses Tailwind CSS. You need to initialize it and create the necessary configuration files.
-
-1.  Install Tailwind CSS (already added to `devDependencies`):
+1.  **Clone the repository** (if you haven't already):
     ```bash
-    npm install -D tailwindcss
-    # or
-    yarn add -D tailwindcss
+    git clone <repository-url>
+    cd <repository-directory>
     ```
-2.  Generate `tailwind.config.js` and `postcss.config.js`:
+2.  **Install dependencies**:
     ```bash
-    npx tailwindcss init -p
+    npm install
     ```
-3.  Configure your template paths in `tailwind.config.js`:
-    ```js
-    /** @type {import('tailwindcss').Config} */
-    module.exports = {
-      content: [
-        "./src/**/*.{js,jsx,ts,tsx}",
-      ],
-      theme: {
-        extend: {},
-      },
-      plugins: [],
-    }
+3.  **Start the development server**:
+    ```bash
+    npm start
     ```
-4.  Add the Tailwind directives to your CSS file (`src/index.css`):
-    ```css
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-    ```
-5.  Ensure `src/index.css` is imported in `src/index.js` (already done). 
+    This runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) (or the specified port) to view it in your browser.
+
+## Deployment
+
+This application is deployed using GitHub Pages.
+
+*   **Live URL**: [https://Acurioustractor.github.io/AIMEdashboards](https://Acurioustractor.github.io/AIMEdashboards)
+*   **To deploy changes**: Run `npm run deploy`. This will build the app and push the `build` folder to the `gh-pages` branch. 
