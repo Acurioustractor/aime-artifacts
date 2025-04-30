@@ -3,6 +3,7 @@ import { Routes, Route, NavLink } from 'react-router-dom'; // Import NavLink for
 import HomePage from './pages/HomePage'; // Import HomePage
 import ImagiNationDashboard from './pages/ImagiNationDashboard';
 import HoodieEconomyVisualization from './pages/HoodieEconomyVisualization';
+import HoodieExchangeDashboard from './pages/HoodieExchangeDashboard'; // Import Hoodie Exchange Dashboard
 // Import the new pages
 import JoyCorpsPage from './pages/JoyCorpsPage';
 import CitizensPage from './pages/CitizensPage';
@@ -98,6 +99,13 @@ function App() {
            >
              GRP Calculator
            </NavLink>
+           {/* Add NavLink for Hoodie Exchange */}
+           <NavLink 
+            to="/hoodie-exchange" 
+            className={({ isActive }) => `${navLinkClasses} ${isActive ? activeNavLinkClasses : ''}`}
+           >
+             Hoodie Exchange
+           </NavLink>
         </div>
       </nav>
 
@@ -107,6 +115,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<ImagiNationDashboard />} />
           <Route path="/hoodie-economy" element={<HoodieEconomyVisualization />} />
+          {/* Add route for Hoodie Exchange */}
+          <Route path="/hoodie-exchange" element={<HoodieExchangeDashboard />} />
           {/* Add routes for the new pages */}
           <Route path="/joy-corps" element={<JoyCorpsPage />} />
           <Route path="/citizens" element={<CitizensPage />} />

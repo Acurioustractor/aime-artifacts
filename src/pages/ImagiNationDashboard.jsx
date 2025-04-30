@@ -270,7 +270,7 @@ const ImagiNationDashboard = () => {
                        />
                     </PieChart>
                   </ResponsiveContainer>
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
                     <div className="text-3xl font-bold text-gray-800">{(totalImpact/1000000).toFixed(0)}M</div>
                     <div className="text-xs text-gray-500">People</div>
                   </div>
