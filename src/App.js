@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom'; // Import NavLink for active styling - removed unused Link
+import HomePage from './pages/HomePage'; // Import HomePage
 import ImagiNationDashboard from './pages/ImagiNationDashboard';
 import HoodieEconomyVisualization from './pages/HoodieEconomyVisualization';
 // Import the new pages
@@ -25,6 +26,13 @@ function App() {
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-x-4 gap-y-2 text-indigo-700">
           <NavLink 
             to="/" 
+            end // Use end prop for exact match on root path
+            className={({ isActive }) => `${navLinkClasses} ${isActive ? activeNavLinkClasses : ''}`}
+          >
+            Home 
+          </NavLink>
+          <NavLink 
+            to="/dashboard" 
             className={({ isActive }) => `${navLinkClasses} ${isActive ? activeNavLinkClasses : ''}`}
           >
             Dashboard
@@ -96,7 +104,8 @@ function App() {
       {/* Main Content Area */}
       <main className="max-w-7xl mx-auto px-4">
         <Routes>
-          <Route path="/" element={<ImagiNationDashboard />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<ImagiNationDashboard />} />
           <Route path="/hoodie-economy" element={<HoodieEconomyVisualization />} />
           {/* Add routes for the new pages */}
           <Route path="/joy-corps" element={<JoyCorpsPage />} />
