@@ -229,7 +229,7 @@ const ImagiNationDashboard = () => {
             <div className="bg-white rounded-lg shadow p-4">
               <h2 className="text-lg font-semibold text-gray-700 mb-4">Projected Total Impact (People Reached)</h2>
               <div className="h-72 flex flex-col items-center justify-center">
-                <div className="relative w-64 h-64">
+                <div className="relative w-64 h-64 flex items-center justify-center">
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
                       <Pie
@@ -270,7 +270,7 @@ const ImagiNationDashboard = () => {
                        />
                     </PieChart>
                   </ResponsiveContainer>
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                     <div className="text-3xl font-bold text-gray-800">{(totalImpact/1000000).toFixed(0)}M</div>
                     <div className="text-xs text-gray-500">People</div>
                   </div>
