@@ -2,7 +2,7 @@
   "name": "imagi-nation-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Acurioustractor.github.io/AIMEdashboards",
+  "homepage": "https://acurioustractor.github.io/aime-artifacts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
