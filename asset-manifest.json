@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/aime-artifacts/static/css/main.00d4e2ff.css",
-    "main.js": "/aime-artifacts/static/js/main.a38beca9.js",
+    "main.css": "/aime-artifacts/static/css/main.051dd9aa.css",
+    "main.js": "/aime-artifacts/static/js/main.891cff16.js",
     "index.html": "/aime-artifacts/index.html",
-    "main.00d4e2ff.css.map": "/aime-artifacts/static/css/main.00d4e2ff.css.map",
-    "main.a38beca9.js.map": "/aime-artifacts/static/js/main.a38beca9.js.map"
+    "main.051dd9aa.css.map": "/aime-artifacts/static/css/main.051dd9aa.css.map",
+    "main.891cff16.js.map": "/aime-artifacts/static/js/main.891cff16.js.map"
   },
   "entrypoints": [
-    "static/css/main.00d4e2ff.css",
-    "static/js/main.a38beca9.js"
+    "static/css/main.051dd9aa.css",
+    "static/js/main.891cff16.js"
   ]
 }
