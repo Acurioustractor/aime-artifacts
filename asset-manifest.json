@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aime-artifacts/static/css/main.0b1251da.css",
+    "main.js": "/aime-artifacts/static/js/main.a8be339d.js",
+    "index.html": "/aime-artifacts/index.html",
+    "main.0b1251da.css.map": "/aime-artifacts/static/css/main.0b1251da.css.map",
+    "main.a8be339d.js.map": "/aime-artifacts/static/js/main.a8be339d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b1251da.css",
+    "static/js/main.a8be339d.js"
+  ]
+}
